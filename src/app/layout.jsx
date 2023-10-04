@@ -16,8 +16,10 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body>
           <Navbar />
-          <Sidebar />
-          <main>{children}</main>
+          <div className="flex">
+            <Sidebar />
+            <main>{children}</main>
+          </div>
         </body>
       </html>
     </MenuContextProvider>
