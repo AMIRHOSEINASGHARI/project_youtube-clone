@@ -1,7 +1,7 @@
 //* Global CSS
 import "./globals.css";
 //* Components
-import { Navbar, Sidebar } from "@/components";
+import { Category, Navbar, Sidebar } from "@/components";
 //* Context
 import MenuContextProvider from "@/utils/MenuContextProvider";
 
@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body>
           <Navbar />
+          <Category />
           <div className="flex">
             <Sidebar />
             <main>{children}</main>
