@@ -1,7 +1,9 @@
 //* Global CSS
 import "./globals.css";
 //* Components
-import { Navbar } from "@/components";
+import { Navbar, Sidebar } from "@/components";
+//* Context
+import MenuContextProvider from "@/utils/MenuContextProvider";
 
 export const metadata = {
   title: "Youtube Clone",
@@ -10,11 +12,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        <main>{children}</main>
-      </body>
-    </html>
+    <MenuContextProvider>
+      <html lang="en">
+        <body>
+          <Navbar />
+          <Sidebar />
+          <main>{children}</main>
+        </body>
+      </html>
+    </MenuContextProvider>
   );
 }

@@ -35,7 +35,6 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      {/* //TODO: Sidebar Component */}
       <Search />
     </header>
   );
