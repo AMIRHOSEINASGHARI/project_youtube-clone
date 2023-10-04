@@ -1,4 +1,7 @@
+//* Global CSS
 import "./globals.css";
+//* Components
+import { Navbar } from "@/components";
 
 export const metadata = {
   title: "Youtube Clone",
@@ -8,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
