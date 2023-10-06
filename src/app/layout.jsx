@@ -3,7 +3,7 @@ import "./globals.css";
 //* Components
 import { Category, Navbar, Sidebar } from "@/components";
 //* Context
-import MenuContextProvider from "@/utils/MenuContextProvider";
+import ContextProvider from "@/utils/ContextProvider";
 
 export const metadata = {
   title: "Youtube Clone",
@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <MenuContextProvider>
+    <ContextProvider>
       <html lang="en">
         <body>
           <Navbar />
@@ -23,6 +23,6 @@ export default function RootLayout({ children }) {
           </div>
         </body>
       </html>
-    </MenuContextProvider>
+    </ContextProvider>
   );
 }

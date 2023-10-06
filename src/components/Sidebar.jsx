@@ -6,11 +6,11 @@ import { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //* Context
-import { MenuContext } from "@/utils/MenuContextProvider";
+import { MainContext } from "@/utils/ContextProvider";
 import { categories } from "@/utils/constants";
 
 const Sidebar = () => {
-  const { showMenu } = useContext(MenuContext);
+  const { showMenu } = useContext(MainContext);
 
   return (
     <section className="max-md:hidden bg-white flex flex-col justify-between h-screen overflow-auto pb-16 px-3">

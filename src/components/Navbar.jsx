@@ -6,14 +6,14 @@ import { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //* Context
-import { MenuContext } from "@/utils/MenuContextProvider";
+import { MainContext } from "@/utils/ContextProvider";
 //* Components
 import { Search } from ".";
 //* React Icons
 import { VscMenu } from "react-icons/vsc";
 
 const Navbar = () => {
-  const { showMenu, setShowMenu } = useContext(MenuContext);
+  const { showMenu, setShowMenu } = useContext(MainContext);
 
   return (
     <header className="flex items-center justify-between p-3 lg:px-6">
