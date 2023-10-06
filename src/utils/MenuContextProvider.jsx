@@ -3,15 +3,19 @@
 //* React
 import React, { useState } from "react";
 
-export const MenuContext = React.createContext();
+export const MainContext = React.createContext();
 
-const MenuContextProvider = ({ children }) => {
+const ContextProvider = ({ children }) => {
   const [showMenu, setShowMenu] = useState(true);
+  const [searchTerm, setSerchTerm] = useState("");
+
   return (
-    <MenuContext.Provider value={{ showMenu, setShowMenu }}>
+    <MainContext.Provider
+      value={{ showMenu, setShowMenu, searchTerm, setSerchTerm }}
+    >
       {children}
-    </MenuContext.Provider>
+    </MainContext.Provider>
   );
 };
 
-export default MenuContextProvider;
+export default ContextProvider;
