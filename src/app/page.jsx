@@ -1,5 +1,8 @@
+//* Components
+import { HomePage } from "@/components";
+
 const Home = () => {
-  return <div>Home</div>;
+  return <HomePage />;
 };
 
 export default Home;
