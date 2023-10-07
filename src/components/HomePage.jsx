@@ -36,18 +36,3 @@ const HomePage = ({ data }) => {
 };
 
 export default HomePage;
-
-// {
-//   kind: 'youtube#searchResult',
-//   id: { kind: 'youtube#video', videoId: '0NDVCXpt4wM' },
-//   snippet: {
-//     publishedAt: '2023-01-08T06:58:13Z',
-//     channelId: 'UCdCQuYGtW5bVaKBaKsb1t6A',
-//     title: 'top 10 most popular k-pop group in the world',
-//     description: 'top 10 most popular k-pop group in the world #bts #blackpink #shorts #astro #wannaone #got7 #twice #redvelevet #nct #monstax ...',
-//     thumbnails: [Object],
-//     channelTitle: 'filmy dream01',
-//     liveBroadcastContent: 'none',
-//     publishTime: '2023-01-08T06:58:13Z'
-//   }
-// },
