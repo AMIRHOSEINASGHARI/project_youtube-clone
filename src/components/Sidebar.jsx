@@ -13,7 +13,7 @@ const Sidebar = () => {
   const { showMenu } = useContext(MainContext);
 
   return (
-    <section className="max-md:hidden bg-white flex flex-col justify-between h-screen overflow-auto pb-16 px-3">
+    <section className="max-md:hidden bg-white fixed left-0 top-[65px] flex flex-col justify-between h-screen overflow-auto pb-16 px-3">
       <div>
         {categories.map((item) => (
           <Link

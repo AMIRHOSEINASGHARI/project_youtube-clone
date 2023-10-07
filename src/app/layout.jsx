@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <body>
           <Navbar />
           <Category />
-          <div className="flex">
+          <div>
             <Sidebar />
             <main>{children}</main>
           </div>

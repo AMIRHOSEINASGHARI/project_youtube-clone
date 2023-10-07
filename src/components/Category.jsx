@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Category = () => {
   return (
-    <section className="md:hidden flex gap-3 overflow-auto p-3">
+    <section className="md:hidden flex gap-3 overflow-auto p-3 fixed top-14 bg-white">
       {categories.map((item) => (
         <Link
           key={item.name}

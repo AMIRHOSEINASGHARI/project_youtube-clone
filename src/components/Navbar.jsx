@@ -16,8 +16,8 @@ const Navbar = () => {
   const { showMenu, setShowMenu } = useContext(MainContext);
 
   return (
-    <header className="flex items-center justify-between p-3 lg:px-6">
-      <div className="flex items-center gap-7">
+    <header className="fixed top-0 bg-white w-full flex items-center justify-between p-3 lg:px-6">
+      <div className="flex items-center gap-7 lg:gap-10">
         <button
           type="button"
           className="max-md:hidden text-xl p-2 rounded-full hover:bg-gray-100"
@@ -25,7 +25,7 @@ const Navbar = () => {
         >
           <VscMenu />
         </button>
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center">
           <Image
             className="w-20 lg:w-24"
             src="/youtube.svg"
