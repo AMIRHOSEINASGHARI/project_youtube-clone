@@ -3,6 +3,7 @@
 import { useContext } from "react";
 //* Components
 import { VideoCard } from ".";
+//* Context
 import { MainContext } from "@/utils/ContextProvider";
 
 const HomePage = ({ data }) => {
@@ -22,10 +23,10 @@ const HomePage = ({ data }) => {
         return (
           <VideoCard
             key={id.videoId}
+            videoId={id.videoId}
             publishedAt={snippet.publishedAt}
             channelId={snippet.channelId}
             title={snippet.title}
-            description={snippet.description}
             thumbnails={snippet.thumbnails}
             channelTitle={snippet.channelTitle}
           />

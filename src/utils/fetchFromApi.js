@@ -5,7 +5,7 @@ const headers = {
 
 export async function fetchVideos(searchTerm = "Most popular") {
   const res = await fetch(
-    `https://youtube-v31.p.rapidapi.com/search?q=${searchTerm}&maxResults=50&part=snippet,id&regionCode=US`,
+    `https://youtube-v31.p.rapidapi.com/search?q=${searchTerm}&maxResults=50&part=snippet,id&regionCode=US&order=date`,
     {
       headers: headers,
     }
